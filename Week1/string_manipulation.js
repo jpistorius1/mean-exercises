@@ -35,4 +35,4 @@ var information = ask.question('What should I know about you, '+ firstName+"? Wh
 var howLong = ask.question('How many characters would you like me to print to the end? ');
 
 	console.log(firstName+', so you want to see me count from the position of ' + howLong + ' until the end? Ok, we can do that. ');
-	console.log(howLong.substr(howLong));
+	console.log(information.substr(howLong));
