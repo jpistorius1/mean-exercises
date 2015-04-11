@@ -12,31 +12,31 @@ var integer10 = ask.question("Please enter the 10th number. ");
 
 var smallest = integer1;
 if (integer2 < smallest){
-	smallest = integer2
+	smallest = integer2;
 } 
 if (integer3 < smallest){
-	smallest = integer3
+	smallest = integer3;
 } 
 if (integer4 < smallest){
-	smallest = integer4
+	smallest = integer4;
 } 
 if (integer5 < smallest){
-	smallest = integer5
+	smallest = integer5;
 } 
 if (integer6 < smallest){
-	smallest = integer6
+	smallest = integer6;
 } 
 if (integer7 < smallest){
-	smallest = integer7
+	smallest = integer7;
 } 
 if (integer8 < smallest){
-	smallest = integer8
+	smallest = integer8;
 } 
 if (integer9 < smallest){
-	smallest = integer9
+	smallest = integer9;
 } 
 if (integer10 < smallest){
-	smallest = integer10
+	smallest = integer10;
 } 
 
 console.log("The smallest number you've supplied is "+smallest);
