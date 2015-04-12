@@ -1,5 +1,6 @@
 var ask = require('readline-sync');
 var userChoice = ask.question("Do you choose rock, paper or scissors? ");
+var user_to_lower = userChoice.toLowerCase();
 var computerChoice = Math.random();
 
 if (computerChoice < 0.34) {
@@ -37,4 +38,4 @@ var compare = function(choice1,choice2)
 		}
 	}
 }
-console.log(compare(userChoice,computerChoice));
+console.log(compare(user_to_lower,computerChoice));
