@@ -26,19 +26,23 @@ function sumAll() {
 console.log(sumAll(1, 123, 115, 44, 88));
 
 //number 4
+var numberArray = [56, 32, 5, 89, 32];
 
-function largestPosition(){
-var array = [56, 32, 5, 89, 32];
+function getLargestPosition(){
 var largest = 0;
+var largestIndex = -1;
 
-for (var i = 0; 0 < 100; i++ ) {
-    if (array[i] > largest) {
-       largest = array[i];
+for (var i = 0; i < numberArray.length; i++ ) {
+    if (numberArray[i] > largest) {
+       largest = numberArray[i];
+       largestIndex = i;
           } 
-    return largest //.splice(array);
+    } return largestIndex;
 }
+function removeLargest(largestIndex){
+	numberArray.splice(largestIndex, 1);
 }
-console.log(largestPosition());
+console.log(numberArray);
 
 //number 5
 
@@ -59,3 +63,30 @@ function splitting(){
 		return splitApart;
 }
 console.log(splitting());
+
+//number 7
+
+function sorted(){
+	var string = "How are you doing today?";
+	var lowerCasing = string.toLowerCase();
+	var splitApart = lowerCasing.split(" ");
+	var sorting = splitApart.sort();
+	
+		return sorting;
+}
+console.log(sorted());
+
+//number 8
+
+function backToString(){
+	var string = "How are you doing today?";
+	var lowerCasing = string.toLowerCase();
+	var splitApart = lowerCasing.split(" ");
+	var sorting = splitApart.sort();
+	
+		return sorting.toString();
+}
+console.log(backToString());
+
+//number 9
+
