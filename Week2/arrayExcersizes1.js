@@ -34,9 +34,28 @@ var largest = 0;
 for (var i = 0; 0 < 100; i++ ) {
     if (array[i] > largest) {
        largest = array[i];
-      var newLargest = largest.splice();
-    } 
-    return newLargest;
+          } 
+    return largest //.splice(array);
 }
 }
 console.log(largestPosition());
+
+//number 5
+
+function averageAll() {
+    var i, sum = 0;
+    for(i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+} 
+console.log(averageAll(1, 123, 115, 44, 88) / 5);
+
+//number 6
+
+function splitting(){
+	var string = "How are you doing today?";
+	var splitApart = string.split(" ");
+		return splitApart;
+}
+console.log(splitting());
