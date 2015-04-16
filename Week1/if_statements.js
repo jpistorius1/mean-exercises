@@ -7,3 +7,5 @@ if (higherNumber <= lowerNumber){
 	console.log(lowerNumber)
 }
 
+
+
