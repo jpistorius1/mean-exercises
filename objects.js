@@ -57,3 +57,4 @@ var tournamentTimes = new tournamentResults (
     'Timothy', 11;
 )
 console.log tournamentResults();
+
