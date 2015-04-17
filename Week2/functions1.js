@@ -10,14 +10,14 @@ console.log(sum);
 //number 2
 
 function threeNumbers(num1, num2, num3){
-	var smallest = num1;
-	if (num2 < smallest){
-		smallest = num2;
+	var largestNumber = num1;
+	if (num2 > largestNumber){
+		largestNumber = num2;
 	}
-	if (num3 < smallest){
-		smallest = num3;
+	if (num3 > largestNumber){
+		largestNumber = num3;
 	}
-	return smallest;
+	return largestNumber;
 }
 
 var tiny = threeNumbers(3, 8, 1);
@@ -50,3 +50,17 @@ function howLong(x){
 }
 var stuff = howLong('test test test test test');
 console.log(stuff);
+
+//number 5
+
+function fibonacci(numberTo){
+	for (startingPoint = 0, secondPoint = 1, thirdPoint = 0; thirdPoint < numberTo; startingPoint = secondPoint, secondPoint = x, thirdPoint ++){
+		x = startingPoint + secondPoint;
+			console.log(x);
+	}
+};
+
+fibonacci(10);
+
+// number 6
+
