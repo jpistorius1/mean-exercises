@@ -64,3 +64,26 @@ fibonacci(10);
 
 // number 6
 
+var a = 2;
+var b = 3;
+var c = 4;
+
+function quadraticEquation(){
+var array = [];
+var divisor = (b * b) - (4 * a * c);
+var negativity = (divisor >= 0);
+var product = 1;
+if (negativity == true){product = -1}
+	var plusQuad = ((b * -1) + (Math.sqrt(Math.abs(divisor)) * product)) / 2 * a;
+	var minusQuad = ((b * -1) - (Math.sqrt(Math.abs(divisor)) * product)) / 2 * a;
+
+	array.push(plusQuad);
+	array.push(minusQuad);
+
+	return array;
+}
+console.log(quadraticEquation());
+
+function (){
+	
+}
