@@ -84,6 +84,5 @@ if (negativity == true){product = -1}
 }
 console.log(quadraticEquation());
 
-function (){
-	
-}
+// number 7
+
