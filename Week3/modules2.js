@@ -1,1 +1,3 @@
-var question2 = require('./modules');
+var countingMonths = require('./modules.js');
+
+console.log(countingMonths);
