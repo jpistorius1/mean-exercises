@@ -78,8 +78,6 @@ function checkBored(bored){
 	}
 }
 
-// health = 0 and death
-
 function checkHealth(){
 	if (myMonster.health == 0){
 		var endOfTheGame = ask.question("Would you like to start over? ")
