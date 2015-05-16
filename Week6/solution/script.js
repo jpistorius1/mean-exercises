@@ -52,12 +52,13 @@ function get_longboards() {
     preview();
   })
   .fail( function (err) {
-    console.log(err.responseText);
+    console.log(err);
   });
 }
 
 function objectify_longboards(data) {
   if (data.length) {
+    console.log(data);
     return [new Item(data[0])].concat(objectify_longboards(data.slice(1)));
   } else {
     return [];
@@ -151,7 +152,8 @@ function delete_longboard(id) {
 function update_longboard(longboard, callback) {
   $.ajax(BASE_URL + '/longboard/' + longboard._id, {
     method: 'PUT',
-    data: longboard
+    data: JSON.stringify(longboard),
+    contentType: 'application/json'
   })
   .done( function (data) {
     return callback(new Item(data));
@@ -165,7 +167,9 @@ function update_longboard(longboard, callback) {
 function create_longboard(longboard, callback) {
   $.ajax(BASE_URL + '/longboard', {
     method: 'POST',
-    data: longboard
+    processData: false,
+    data: JSON.stringify(longboard),
+    contentType: 'application/json'
   })
   .done( function (data) {
     return callback(new Item(data));

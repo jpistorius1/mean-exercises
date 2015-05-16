@@ -1,1 +1,1 @@
-var BASE_URL = '/';
+var BASE_URL = 'http://localhost:9050';
