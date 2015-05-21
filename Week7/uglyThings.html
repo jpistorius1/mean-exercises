@@ -3,22 +3,24 @@
 <head>
 	<title>Ugly Things</title>
 </head>
-<body ng-app="uglyThings" style="background-color: blue">
+<body ng-app="uglyThings" style="background-color: grey">
 
-<div ng-controller="uglyItems"> 
+<div ng-controller="uglyItems" align="center"> 
 
 <input type="text" ng-model="awfulItem.title">
 <input type="text" ng-model="awfulItem.img_url">
-<input type="text" ng-model="awfulItem.description"><br><br>
+<input type="text" ng-model="awfulItem.description">
+
+<br><br>
 
 <button ng-click="clickedButton()">Save information</button>
 
 <div ng-repeat="ugly in pushedUglyItems" align="center">
 
 
-<h3>Title:{{pushedUglyItems.title}}</h3>
-<h3>Description:{{pushedUglyItems.description}}</h3>
-<img ng-src="{{pushedUglyItems.img_url}}"></img>
+<h3>Title:{{ugly.title}}</h3>
+<h3>Description:{{ugly.description}}</h3>
+<img ng-src="{{ugly.img_url}}"></img>
 
 
 </div>
@@ -26,6 +28,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="uglythings.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Box</title>
+</head>
+<body ng-app="inputAngular">
+
+<div ng-controller="inputTextBox">
+
+
+	<h2>{{userInput}}</h2>
+
+
+
+<input type="text" ng-model="userInput">
+
+
+
+</div>
+
+<button ng-click="saveGroceryItem()">Add item to your list</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="inputAngular.js"></script>
+
+</body>
+</html>

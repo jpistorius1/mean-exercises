@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List</title>
+</head>
+
+<h1><u> Groceries List </u></h1>
+
+<body ng-app="shoppingList">
+
+<div ng-controller="groceryList">
+
+	<ul>
+	<h4 ng-repeat="cartItem in theList track by $index">{{cartItem}} <button ng-click="deleteGroceryItem($index)">X</button></h4>
+
+<input type="text" ng-model="userInput">
+<button ng-click="saveGroceryItem()">Add item to your list</button>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="shoppingList.js"></script>
+
+</body>
+</html>
